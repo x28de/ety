@@ -1,0 +1,176 @@
+﻿<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>Doku</TITLE>
+</head>
+<FONT FACE="ARIAL">
+
+<H2>Notdürftige Dokumentation</H2>
+<em><a href="#release-notes">Neuigkeiten</a> 2015-03-15</em>
+<h3>Suchen</h3>
+<p>
+Im einfachsten Fall wird genau das eingetippte Suchwort gefunden  
+und kann im Ergebnisformular bearbeitet werden.
+</p>
+<center>
+<img src="screenshot1.jpg">
+</center>
+<h3>Parents</h3>
+<p>
+In vorläufigen Datenbestand sind alle Lexeme einem "Parent" 
+zugeordnet, der sich in Wesentlichen aus der Verweisstruktur 
+des Duden Herkunftswörterbuchs ergibt. Wenn das Lexem an einen 
+anderen Parent "umgehängt" werden soll, geht das über die 
+Dropdown-Liste.
+</p>
+<center>
+<img src="screenshot2.jpg">
+</center>
+<p>
+Da die Dropdownliste natürlich nicht alle Wörter der Datenbank 
+enthalten kann, wird zunächst nur der Kontext angeboten, zu dem 
+das Wort gehört.
+</p>
+<p>
+Wenn ein Wort aus einem <em>neuen</em> Kontext herangezogen 
+werden soll, sind dann zwei Schritte nötig. 
+Angenommen, engl. <em>know</em> soll mit sämtlichen Nachfahren 
+auf das neu eingefügte idg. <em>*gneh3</em> umgehängt werden.
+</p>
+<p>
+Dafür ist das Kästchen unter der Suchmaske gedacht "Keep  
+current choice of parents". 
+<ul>
+<li>Man wechselt zuerst zum <em>neuen</em> 
+Kontext (<b>Erstens: Vorfahr</b>), 
+<li>dann gibt man ins Suchfeld das 
+umzuhängende Wort ein (<b>Zweitens: Nachkomme</b>), mit 
+aktiviertem Häkchen "Keep...", 
+</ul>
+</p>
+<center>
+<img src="screenshot6.jpg">
+</center>
+<p>
+damit der richtige Parent in der 
+richtigen Dropdown-Auswahl erscheint. 
+</p>
+<center>
+<img src="screenshot7.jpg">
+</center>
+<p>Anderes Beispiel: Angenommen, zwischen 
+dt. <em>leicht</em> und idg. <em>lenguh</em> ist ein neues 
+Wort in die Kette eingefügt worden -- ich erfinde mal eine erweiterte 
+Wurzel idg. <em>lenguh-t</em> -- und das deutsche <em>leicht</em> 
+soll mitsamt seinen Nachfahren dorthin umgehängt werden.
+</p>
+<center>
+<img src="screenshot3.jpg">
+</center>
+<p>
+damit der richtige Parent in der 
+richtigen Dropdown-Auswahl erscheint. 
+</p>
+<center>
+<img src="screenshot4.jpg">
+</center>
+<p>
+(Hintergrund: sonst wäre eine aufwändige extra Dialogseite für 
+die Parentzuordnung nötig geworden.)
+</p>
+<p>
+Nun kann der neue Parent aus der Dropdown-Liste ausgewählt werden,
+und nachdem der <em>Change</em>-Button geklickt wurde, erscheint zur 
+Kontrolle die veränderte Tree View.
+<p>
+<center>
+<img src="screenshot5.jpg">
+</center>
+</p>
+<h3>Alternativ-Strategie</h3>
+<p>
+Alternativ könnte man auch das vorläufige Lexem, hier <em>leicht</em>, 
+komplett ersetzen durch das korrekte, hier <em>lenguh-t</em>, ohne 
+seine Position im Baum zu verändern, indem einfach alle Felder 
+abgeändert werden (inklusive der Lexem-Bezeichnung selbst). Und 
+später kann dann der vorläufige deutsche Platzhalter an der 
+richtigen Stelle wieder neu einfügt werden.
+</p>
+<h3>Löschen</h3>
+<p>
+Versehentlich angelegte Datensätze können mit dem Häkchen 
+der rot markierten Spalte und dem <em>Change</em>-Button gleich wieder
+gelöscht werden: Ohne Rückfrage! Und ohne "Undo" ! 
+Feldinhalte können noch nicht gelöscht werden, nur überschrieben. 
+Gelöschte Parents führen zu "Waisen", deren Liste <strike>noch 
+nicht</strike> <em>jetzt immerhin</em> angezeigt wird.
+</p>
+<h3>Doppelte Einträge</h3>
+<p>
+Ein neuer Eintrag wird nur angelegt, wenn dasselbe Lexem noch 
+gar nicht vorhanden ist oder wenn auch ein Sprachzustand 
+<em>lang</em> angegeben ist und der Eintrag dadurch eindeutig 
+wird.
+</p>
+<h3>Exact Match</h3>
+<p>
+Im Suchfeld kann mit Gänsefüßchen angefordert werden, dass nicht 
+am Wortende trunkiert wird und dass Stern * und Klammer auf ( 
+nicht automatisch ergänzt werden. Also z.B.:
+<br />"*per" findet nur *per
+<br />per findet *per und z.B. auch *per-i und per
+<br />Perücke findet den vorläufigen Eintrag (Perücke) "(ungeklärt)".
+</p>
+<h3>Zeichen</h3>
+<p>
+Beim Abschreiben habe ich alle diakritischen Zeichen der idg. 
+Wurzeln weggelassen, weil ich sie nicht auseinanderhalten kann 
+und sonst zuviele schwer bemerkbare Fehler gemacht hätte. 
+Ebenso habe ich den idg. Stern weggelassen, damit die Fehler 
+leichter zu erkennen sind, und ebenso auch auf griechische Schrift
+verzichtet. Aber die Datenbank und die Formulare sollten 
+UTF-8 akzeptieren, z.B. einzugeben mit Maus-Keyboards wie Polytonic Greek
+auf Windows-8-Rechnern. Spezielle Fonts zu deren Darstellung 
+habe ich aber noch nicht berücksichtigt.
+</p>
+<p>
+Groß-Kleinschreibung kann meine Datenbank nicht unterscheiden, 
+daher habe ich mit vorläufigen Workarounds geholfen wie 
+"all" vs. "All(groß)". Ähnlich mit Homographen wie 
+"ob-1" (Präposition) vs. "ob-2" (Konjunktion).
+</p>
+<p>
+<h3>Rollen, Berechtigungen, Passwörter</h3>
+<p>
+(censored)
+</p>
+
+Viel Spaß,
+M. Melcher, 28.01.2015
+
+<a name="release-notes"><h3><em>Neu:</em></h3></a>
+<br />2015-03-15:
+<br />Von Samstag 20:13 bis Sonntag 18:10 war ein Programmfehler 
+wirksam, der bei Änderungen evtl. die Parent-Zuordnung gelöscht
+hat. Ich hoffe es ist Ihnen nichts kaputt gegangen.
+<br />&nbsp;
+
+<br />2015-03-14:
+<br />Parents können nun gelöscht werden; 
+<br />rules verbessert; 
+<br />falls die neue Version probleme macht, bitte Bescheid sagen und notfalls index-bak.php benutzen
+<br />&nbsp;
+
+<br />2015-03-07:
+<br />Siehe auch <a href="http://x28hd.de/ety/stats.htm">stats.htm</a>
+<br />&nbsp;
+
+<br />2015-02-07: 
+<br />Bedeutung kann nun eingetragen werden; 
+<br />&nbsp;
+
+<br />in der Tree View werden "Onkels" von Geschwistern von durch 
+Semikolon statt Komma unterschieden 
+(Großonkels usw. entsprechend durch wiederholtes Semikolon);
+<br />die Datensicherung ist durch <tt>http://x28hd.de/ety/dump.php</tt>
+zu erhalten.
+
